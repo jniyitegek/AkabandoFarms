@@ -2,12 +2,16 @@
 
 ## Project Overview
 
-AkabandoFarms is a web application designed to help small-scale farmers make data-driven decisions. By providing real-time information on market prices for produce, localized weather forecasts, and interactive data tools, the app aims to improve agricultural planning and sales. It's built to be easily deployed using Docker, ensuring portability and scalability.
+- **Demo Video:** Watch a walkthrough of AkabandoFarms on [YouTube](https://youtu.be/GMghTVNDxxw).
+- **Docker Hub:** Find the official container image at [Docker Hub](https://hub.docker.com/r/jniyitegek/akabandofarms).
+
+AkabandoFarms is a web application designed to help Rwandan farmers make informed decisions. By providing localized weather forecasts, farming tips, and crop-specific advice, the app empowers users to plan agricultural activities more effectively. Farmers select their district and crop to receive tailored weather alerts and recommendations on whether a crop is suitable for their area. The app is easily deployed using Docker, ensuring portability and scalability.
 
 ### Core Features
 
-- **Real-time Data:** Fetches live data from external APIs for market prices and weather.
-- **User Interaction:** Provides tools to sort data by price and filter information for specific timeframes.
+- **Localized Weather Data:** Fetches live weather data for selected districts.
+- **Crop-Specific Advice:** Provides farming tips and weather-adapted recommendations for chosen crops.
+- **User Interaction:** Allows users to select their district and crop to receive relevant information.
 - **Robustness:** Includes graceful error handling for API outages or invalid responses.
 
 ---
@@ -29,7 +33,7 @@ To run the application on your local machine, follow these steps:
 #### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/akabandofarms.git
+git clone https://github.com/jniyitegek/akabandofarms.git
 cd akabandofarms
 ```
 
@@ -151,6 +155,5 @@ The output should include an `X-Served-By` header that alternates between `web01
 - **Docker & Docker Compose:** Containerization and orchestration.
 - **HAProxy:** Load balancing.
 - **OpenWeatherMap API:** Used for weather data. [API Documentation](https://openweathermap.org/api)
-- **RapidAPI:** Used for market price data. [API Documentation](https://rapidapi.com/)
 
 A special thank you to the creators of these APIs and tools for making this project possible.
