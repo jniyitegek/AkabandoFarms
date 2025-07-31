@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkabandoFarms - Weather & Farming Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> AkabandoFarms</h1>
+            <p class="subtitle">Weather & Farming Assistant for Rwandan Farmers </p>
+
+            <p class="subtitle1">Please! choose a crop and distict first to see farming tips regarding your local weather conditions </p>
+        </header>
+
+        <div class="main-content">
+            <div class="card">
+                <h2>Location & Weather</h2>
+                
+                <form id="location-form">
+                    <div class="location-input">
+                        <input type="text" id="location-input" placeholder="Enter city or use district selection below">
+                        <button type="submit" id="weather-btn">Get Weather</button>
+                    </div>
+                </form>
+
+                <div class="district-search-container">
+                    <input type="text" id="district-search" placeholder="Search district..." oninput="filterDistricts()">
+                    <select id="district-select">
+                        <option value="">Select a district...</option>
+                    </select>
+                </div>
+
+                <div id="weather-display" class="weather-display">
+                    <div id="weather-data"></div>
+                    <div id="forecast"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2> Farming Assistant</h2>
+                
+                <div>
+                    <label for="crop-select">Select your crop:</label>
+                    <select id="crop-select" onchange="updateFarmingTips()">
+                        <option value="">Choose a crop...</option>
+                        <option value="maize">Maize (Corn)</option>
+                        <option value="beans">Beans</option>
+                        <option value="rice">Rice</option>
+                        <option value="coffee">Coffee</option>
+                        <option value="banana">Banana</option>
+                        <option value="potato">Irish Potato</option>
+                        <option value="cassava">Cassava</option>
+                        <option value="sorghum">Sorghum</option>
+                    </select>
+                </div>
+                
+                
+
+                
+            </div>
+            <!-- all info here -->
+            <div class="allinfo">
+                <div id="agri-weather-status" class="agri-status-summary"></div> 
+            <!-- the info and tips -->
+            <div id="farming-tips"></div>
+             <div id="weather-alerts"></div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="Script.js"></script> 
+</body>
+</html>

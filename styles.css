@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'futura', Tahoma, Geneva, Verdana, sans-serif;
+    background: #295656;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.allinfo{
+    background-color: white;
+    padding: 40px;
+    gap: 20px;
+}
+.agri-status-summary{
+    margin-bottom: 30px;
+}
+#farming-tips{
+    margin-bottom: 30px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.subtitle1{
+    margin-top: 20px;
+    background: white ;
+    color: green;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pleaseDo{
+    color: #e53e3e;
+}
+
+.location-input {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    font-size: 12px;
+}
+
+input[type="text"], select {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10Px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #295656;
+}
+
+button {
+    background: #295656;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.weather-display {
+    display: none;
+}
+
+.weather-display.show {
+    display: block;
+}
+
+.current-weather {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.weather-main {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.weather-item {
+    text-align: center;
+}
+
+.weather-item label {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.weather-item value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.forecast-date {
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.forecast-temp {
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+.farming-tips {
+    background: #f0fff4;
+    border-left: 4px solid #38a169;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.tip-category {
+    font-weight: bold;
+    color: #2f855a;
+    margin-bottom: 10px;
+}
+
+.tip-item {
+    margin-bottom: 8px;
+    color: #2d3748;
+}
+
+.alert {
+    background: #fed7d7;
+    border-left: 4px solid #e53e3e;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.alert.warning {
+    background: #fef5e7;
+    border-left-color: #d69e2e;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.error {
+    color: #e53e3e;
+    text-align: center;
+    padding: 20px;
+    background: #fed7d7;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.districts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.district-btn {
+    background: white;
+    border: 2px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.district-btn:hover {
+    border-color: #667eea;
+    background: #f7fafc;
+}
+
+.district-btn.selected {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .location-input {
+        flex-direction: column;
+    }
+}
