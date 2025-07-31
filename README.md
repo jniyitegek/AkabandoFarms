@@ -3,7 +3,7 @@
 ## Project Overview
 
 - **Demo Video:** Watch a walkthrough of AkabandoFarms on [YouTube](https://youtu.be/GMghTVNDxxw).
-- **Docker Hub:** Find the official container image at [Docker Hub](https://hub.docker.com/r/jniyitegek/akabandofarms).
+- **Docker Hub:** Find the official container image at [Docker Hub](https://hub.docker.com/r/jniyitegek/akabandofarms/tags).
 
 AkabandoFarms is a web application designed to help Rwandan farmers make informed decisions. By providing localized weather forecasts, farming tips, and crop-specific advice, the app empowers users to plan agricultural activities more effectively. Farmers select their district and crop to receive tailored weather alerts and recommendations on whether a crop is suitable for their area. The app is easily deployed using Docker, ensuring portability and scalability.
 
