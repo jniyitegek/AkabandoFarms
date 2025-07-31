@@ -15,6 +15,7 @@ AkabandoFarms is a web application designed to help Rwandan farmers make informe
 - **Robustness:** Includes graceful error handling for API outages or invalid responses.
 
 ---
+## NOTICE: look for this line and replace **** with your api key from openweather api const OPENWEATHER_API_KEY = '****[put your weather api key here ]***';
 
 ## 1. Getting Started
 

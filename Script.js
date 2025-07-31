@@ -24,7 +24,7 @@ const districtCoordinates = {
 };
 
 
-const OPENWEATHER_API_KEY = 'f9321ce6aef394e17563fd7624ce9bea';
+const OPENWEATHER_API_KEY = '****[put your weather api key here ]***';
 
 let currentWeatherData = {};
 let currentSelectedCrop = '';
